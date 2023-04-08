@@ -1,0 +1,25 @@
+// moveDistanceType -> 決定移動幅度
+$sm: 40px;
+
+// base class
+.base {
+  opacity: 0;
+}
+
+// horizontal
+.fade-and-move-enter-x-sm {
+  @extend .base;
+  transform: translateX($sm);
+}
+
+// vertical
+.fade-and-move-enter-y-sm {
+  @extend .base;
+  transform: translateY($sm);
+}
+
+.fade-and-move-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 1.5s ease-in;
+}
