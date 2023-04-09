@@ -1,0 +1,20 @@
+@use '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+
+.back-btn {
+  color: colors.$black;
+
+  &::before {
+    background-color: colors.$black;
+  }
+
+  &:hover {
+    color: colors.$white;
+  }
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 14px;
+}
