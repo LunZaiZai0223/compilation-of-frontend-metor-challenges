@@ -15,7 +15,7 @@ const ErrorMessage = () => {
       <h1>404 NOT FOUND</h1>
       <Link to='/' replace className={s.link}>
         <HoverBtn styleClasses={s['back-btn']}>
-          GO to HOME <BsArrowRight />
+          Go to Home <BsArrowRight />
         </HoverBtn>
       </Link>
     </div>
