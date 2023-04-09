@@ -1,0 +1,10 @@
+@use '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+
+.project-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  padding-top: 16px;
+}

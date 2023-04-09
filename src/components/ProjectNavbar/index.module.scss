@@ -1,0 +1,31 @@
+@use '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+
+.navbar {
+  border-bottom: 1px solid colors.$black;
+
+  h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.sub-navbar {
+  margin-bottom: 35px;
+  margin-top: 14px;
+
+  .action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-family: inherit;
+    color: colors.$black;
+  }
+
+  svg {
+    path {
+      fill: colors.$black;
+    }
+  }
+}

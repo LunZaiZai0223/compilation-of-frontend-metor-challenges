@@ -1,0 +1,70 @@
+@use '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+
+.project-item {
+  .preview-img-wrapper {
+    height: 250px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .project-content-wrapper {
+    padding: 0 20px;
+
+    p {
+      margin: 20px 0;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        font-family: inherit;
+
+        svg {
+          width: 25px;
+          height: 25px;
+
+          path {
+            fill: colors.$black;
+          }
+        }
+      }
+
+      .action {
+        button {
+          color: colors.$black;
+          padding: 12px;
+          font-size: 1rem;
+          font-weight: 600;
+
+          &::before {
+            background-color: colors.$black;
+          }
+
+          &:hover {
+            color: colors.$white;
+
+            svg {
+              path {
+                fill: colors.$white;
+              }
+            }
+
+            &::before {
+              color: colors.$white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+@use '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+
+.info-container {
+  background-color: colors.$black;
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  > * {
+    color: colors.$white;
+  }
+
+  @include md {
+    display: block;
+  }
+
+  .wrapper {
+    width: 100%;
+
+    @include md {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .job-title {
+      margin-bottom: 2.5rem;
+      padding-left: 1rem;
+      font-size: 6vw;
+      font-weight: 800;
+
+      @include md {
+        font-size: 10vw;
+      }
+
+      span {
+        position: relative;
+        color: colors.$black;
+        z-index: 1;
+
+        &::before {
+          content: '';
+          position: absolute;
+          background-color: colors.$white;
+          height: 100%;
+          width: calc(100% + 1rem);
+          left: -1rem;
+          z-index: -1;
+        }
+      }
+
+      @include md {
+        padding: 0;
+        text-align: center;
+      }
+    }
+
+    .description-wrapper {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+
+      @include md {
+        display: block;
+      }
+
+      .left {
+        @include md {
+          margin-bottom: 5rem;
+          width: 100%;
+          padding: 1rem;
+        }
+
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem;
+
+        p {
+          font-size: 3vw;
+          line-height: 1.5;
+
+          a {
+            text-decoration: none;
+            font-family: inherit;
+            font-weight: 700;
+            color: colors.$white;
+            display: inline-block;
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              bottom: 0;
+              left: 0;
+              height: 2px;
+              background-color: colors.$white;
+              transform: scaleX(0);
+              transform-origin: bottom right;
+              transition: transform 0.25s ease-out;
+            }
+
+            &:hover {
+              &::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+              }
+            }
+          }
+
+          @include md {
+            font-size: 7vw;
+          }
+        }
+
+        .hire-me-text {
+          font-size: 1.8vw;
+          font-weight: 300;
+
+          a {
+            text-decoration: none;
+            font-weight: 700;
+            color: colors.$white;
+          }
+
+          @include md {
+            font-size: 4vw;
+          }
+        }
+      }
+
+      .right {
+        border-top: 1px solid;
+
+        @include md {
+          margin-left: auto;
+          width: 80%;
+        }
+
+        p {
+          padding-right: 4rem;
+          font-size: 2.25vw;
+
+          @include md {
+            font-size: 4vw;
+          }
+        }
+
+        .navigate {
+          display: inline-block;
+          margin-top: 10px;
+          text-decoration: none;
+
+          @include md {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
