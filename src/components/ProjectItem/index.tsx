@@ -13,15 +13,7 @@ import { Project } from '../../constants/project-list.constant';
 import s from './index.module.scss';
 
 const ProjectItem = (props: Project) => {
-  const {
-    name,
-    frontendMentorSolutionLink,
-    repositoryLink,
-    demoLink,
-    description,
-    projectPreviewImgPath,
-    id,
-  } = props;
+  const { name, repositoryLink, demoLink, description, projectPreviewImgPath } = props;
   return (
     <li className={s['project-item']}>
       <Card>
