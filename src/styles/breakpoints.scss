@@ -1,0 +1,12 @@
+$mobile: 886px;
+
+@mixin md {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+//// 等價於
+//@media (max-width: $mobile) {
+//  // some settings...
+//}
