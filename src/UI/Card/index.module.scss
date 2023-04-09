@@ -1,0 +1,18 @@
+@use '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+
+.card {
+  background-color: colors.$gray-lighten;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 14px 0;
+  border-radius: 5px;
+  border: 1px solid colors.$card-border-color;
+  box-shadow: 0 4px 12px colors.$box-shadow-color;
+  transition: all 0.25s ease-in;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
