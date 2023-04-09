@@ -28,7 +28,7 @@ const PROJECT_LIST: Project[] = [
     repositoryLink: 'https://github.com/LunZaiZai0223/FM-interactive-comments-section',
     demoLink: 'https://lunzaizai0223.github.io/FM-interactive-comments-section/',
     description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+      '使用 React + TypeScript + Redux Toolkit 做的留言版，設計稿給的資料結構為巢狀，因此透過遞迴建立 <CommentList />，減少程式碼的重複性。',
     projectPreviewImgPath: interactiveCommentsSection,
   },
   {
@@ -38,9 +38,7 @@ const PROJECT_LIST: Project[] = [
       'https://www.frontendmentor.io/solutions/-react-ts-newshomepage-zJdMzKZfIO',
     repositoryLink: 'https://github.com/LunZaiZai0223/FM-news-homepage',
     demoLink: 'https://lunzaizai0223.github.io/FM-news-homepage/',
-
-    description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+    description: 'React + TypeScript + SCSS flex 結合排版，讓手機版介面也可以保持設計稿的樣式。',
     projectPreviewImgPath: newsHomepage,
   },
   {
@@ -51,7 +49,7 @@ const PROJECT_LIST: Project[] = [
     repositoryLink: 'https://github.com/LunZaiZai0223/FM-url-shortening-api',
     demoLink: 'https://lunzaizai0223.github.io/FM-url-shortening-api/',
     description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+      'React + TypeScript + Redux 開發。不使用 Redux Toolkit 管理 app-wide state，藉此練習 Redux 的資料流，也更能理解 Redux Toolkit 解決 Redux 冗長的 boilerplate code 的痛點。',
     projectPreviewImgPath: urlShorteningApiLandingPage,
   },
   {
@@ -61,9 +59,7 @@ const PROJECT_LIST: Project[] = [
       'https://www.frontendmentor.io/solutions/interactive-rating-component-solution-i63qg8aMvQ',
     repositoryLink: 'https://github.com/LunZaiZai0223/FM-interactive-rating-component',
     demoLink: 'https://lunzaizai0223.github.io/FM-interactive-rating-component/',
-
-    description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+    description: 'React + TypeScript 實作的評分元件，透過 state 管理操作步驟並顯示對應的頁面。',
     projectPreviewImgPath: interactiveRatingComponent,
   },
   {
@@ -74,7 +70,7 @@ const PROJECT_LIST: Project[] = [
     repositoryLink: 'https://github.com/LunZaiZai0223/Interactive-card-details-form',
     demoLink: 'https://lunzaizai0223.github.io/Interactive-card-details-form/',
     description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+      'React + TypeScript 開發。建立 custom hook useInput 管理欄位的狀態（輸入的值及欄位是否被點擊過），藉此實作表單驗證，並透過 UI 顯示告知使用者當前欄位輸入的狀態。',
     projectPreviewImgPath: interactiveCardDetailsForm,
   },
   {
@@ -84,8 +80,7 @@ const PROJECT_LIST: Project[] = [
       'https://www.frontendmentor.io/solutions/vue-socialproofsectionmaster-BkkQZHB89',
     repositoryLink: 'https://github.com/LunZaiZai0223/social-proof-section-master',
     demoLink: 'https://lunzaizai0223.github.io/social-proof-section-master/',
-    description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+    description: 'Vue2 開發，並搭配語義化 HTML 標籤實作設計稿頁面。',
     projectPreviewImgPath: socialProofSection,
   },
   {
@@ -94,8 +89,7 @@ const PROJECT_LIST: Project[] = [
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/vueintro-component-with-signup-form-r1QiFb1E5',
     repositoryLink: 'https://github.com/LunZaiZai0223/intro-component-with-signup-form-master',
-    description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+    description: 'Vue2 開發，參照設計稿切版並實作建議表單驗證。',
     demoLink: 'https://lunzaizai0223.github.io/intro-component-with-signup-form-master/',
     projectPreviewImgPath: introComponentWithSignUpForm,
   },
@@ -106,8 +100,7 @@ const PROJECT_LIST: Project[] = [
       'https://www.frontendmentor.io/solutions/vue-timetrackingdashboardmain-nZPmAZlsgX',
     repositoryLink: 'https://github.com/LunZaiZai0223/time-tracking-dashboard-main',
     demoLink: 'https://lunzaizai0223.github.io/time-tracking-dashboard-main/',
-    description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+    description: 'Vue2 + CSS grid 實作設計稿頁面，透過 data 控制顯示不同時間選項的資料。',
     projectPreviewImgPath: timeTrackingDashboard,
   },
   {
@@ -117,8 +110,7 @@ const PROJECT_LIST: Project[] = [
       'https://www.frontendmentor.io/solutions/nft-preview-card-component-challenge-hub-9_9t5k7EZ',
     repositoryLink: 'https://github.com/LunZaiZai0223/layout_practice/tree/main/week09',
     demoLink: 'https://lunzaizai0223.github.io/layout_practice/week09/',
-    description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+    description: '語義化 HTML + SCSS 切出設計稿的版面。',
     projectPreviewImgPath: nftPreviewCardComponent,
   },
   {
@@ -128,8 +120,7 @@ const PROJECT_LIST: Project[] = [
       'https://www.frontendmentor.io/solutions/testimonials-grid-section-VoZLgjAPD',
     repositoryLink: 'https://github.com/LunZaiZai0223/layout_practice/tree/main/week07',
     demoLink: 'https://lunzaizai0223.github.io/layout_practice/week07/',
-    description:
-      'Modern, fully responsive multi-step form with form validation and state management using React JS',
+    description: '語義化 HTML + SCSS grid 切出設計稿版面。',
     projectPreviewImgPath: testimonialsGridSection,
   },
 ];
