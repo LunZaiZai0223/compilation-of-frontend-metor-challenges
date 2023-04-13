@@ -8,15 +8,21 @@ import socialProofSection from '../assets/project-previews/social-proof-section.
 import testimonialsGridSection from '../assets/project-previews/testimonials-grid-section.jpg';
 import timeTrackingDashboard from '../assets/project-previews/time-tracking-dashboard.jpg';
 import urlShorteningApiLandingPage from '../assets/project-previews/url-shortening-api-landing-page.jpg';
+import eShop from '../assets/project-previews/e-shop.png';
+import welcomeToTaiwan from '../assets/project-previews/welcome-to-taiwan.png';
+import ticTacToe from '../assets/project-previews/tic-tac-toe.png';
+import youtubeApiWithVue from '../assets/project-previews/youtube-api-with-vue.png';
+import taiwanReservoirInfo from '../assets/project-previews/taiwan-reservoir-info.png';
 
 export interface Project {
   name: string;
-  frontendMentorSolutionLink: string;
+  frontendMentorSolutionLink?: string;
   repositoryLink: string;
   demoLink: string;
   id: number;
   description?: string;
   projectPreviewImgPath?: string;
+  category: string;
 }
 
 const PROJECT_LIST: Project[] = [
@@ -30,6 +36,7 @@ const PROJECT_LIST: Project[] = [
     description:
       '使用 React + TypeScript + Redux Toolkit 做的留言版，設計稿給的資料結構為巢狀，因此透過遞迴建立 <CommentList />，減少程式碼的重複性。',
     projectPreviewImgPath: interactiveCommentsSection,
+    category: 'frontend-mentor',
   },
   {
     id: 2,
@@ -40,6 +47,7 @@ const PROJECT_LIST: Project[] = [
     demoLink: 'https://lunzaizai0223.github.io/FM-news-homepage/',
     description: 'React + TypeScript + SCSS flex 結合排版，讓手機版介面也可以保持設計稿的樣式。',
     projectPreviewImgPath: newsHomepage,
+    category: 'frontend-mentor',
   },
   {
     id: 3,
@@ -51,6 +59,7 @@ const PROJECT_LIST: Project[] = [
     description:
       'React + TypeScript + Redux 開發。不使用 Redux Toolkit 管理 app-wide state，藉此練習 Redux 的資料流，也更能理解 Redux Toolkit 解決 Redux 冗長的 boilerplate code 的痛點。',
     projectPreviewImgPath: urlShorteningApiLandingPage,
+    category: 'frontend-mentor',
   },
   {
     id: 4,
@@ -61,6 +70,7 @@ const PROJECT_LIST: Project[] = [
     demoLink: 'https://lunzaizai0223.github.io/FM-interactive-rating-component/',
     description: 'React + TypeScript 實作的評分元件，透過 state 管理操作步驟並顯示對應的頁面。',
     projectPreviewImgPath: interactiveRatingComponent,
+    category: 'frontend-mentor',
   },
   {
     id: 5,
@@ -72,6 +82,7 @@ const PROJECT_LIST: Project[] = [
     description:
       'React + TypeScript 開發。建立 custom hook useInput 管理欄位的狀態（輸入的值及欄位是否被點擊過），藉此實作表單驗證，並透過 UI 顯示告知使用者當前欄位輸入的狀態。',
     projectPreviewImgPath: interactiveCardDetailsForm,
+    category: 'frontend-mentor',
   },
   {
     id: 6,
@@ -82,6 +93,7 @@ const PROJECT_LIST: Project[] = [
     demoLink: 'https://lunzaizai0223.github.io/social-proof-section-master/',
     description: 'Vue2 開發，並搭配語義化 HTML 標籤實作設計稿頁面。',
     projectPreviewImgPath: socialProofSection,
+    category: 'frontend-mentor',
   },
   {
     id: 7,
@@ -92,6 +104,7 @@ const PROJECT_LIST: Project[] = [
     description: 'Vue2 開發，參照設計稿切版並實作建議表單驗證。',
     demoLink: 'https://lunzaizai0223.github.io/intro-component-with-signup-form-master/',
     projectPreviewImgPath: introComponentWithSignUpForm,
+    category: 'frontend-mentor',
   },
   {
     id: 8,
@@ -102,6 +115,7 @@ const PROJECT_LIST: Project[] = [
     demoLink: 'https://lunzaizai0223.github.io/time-tracking-dashboard-main/',
     description: 'Vue2 + CSS grid 實作設計稿頁面，透過 data 控制顯示不同時間選項的資料。',
     projectPreviewImgPath: timeTrackingDashboard,
+    category: 'frontend-mentor',
   },
   {
     id: 9,
@@ -112,6 +126,7 @@ const PROJECT_LIST: Project[] = [
     demoLink: 'https://lunzaizai0223.github.io/layout_practice/week09/',
     description: '語義化 HTML + SCSS 切出設計稿的版面。',
     projectPreviewImgPath: nftPreviewCardComponent,
+    category: 'frontend-mentor',
   },
   {
     id: 10,
@@ -122,6 +137,57 @@ const PROJECT_LIST: Project[] = [
     demoLink: 'https://lunzaizai0223.github.io/layout_practice/week07/',
     description: '語義化 HTML + SCSS grid 切出設計稿版面。',
     projectPreviewImgPath: testimonialsGridSection,
+    category: 'frontend-mentor',
+  },
+  {
+    id: 11,
+    name: '臺灣水庫資訊',
+    repositoryLink: 'https://github.com/LunZaiZai0223/taiwan-reservoir-info',
+    demoLink: 'https://lunzaizai0223.github.io/taiwan-reservoir-info/',
+    description:
+      '使用 Angular 開發，串接水庫資訊 API，並使用 ng-apexcharts 實作圖表、ngx-translate 實作 i18n 語系切換（中/英）以及 Rx.js 呼叫不同 API 並整理成頁面所需的資訊。排版則是使用 SCSS + flexbox，並依照目前樣式模式渲染明亮或黑暗模式的介面。',
+    projectPreviewImgPath: taiwanReservoirInfo,
+    category: 'others',
+  },
+  {
+    id: 12,
+    name: 'Youtube API with Vue',
+    repositoryLink: 'https://github.com/LunZaiZai0223/vue-youtube-project',
+    demoLink: 'https://lunzaizai0223.github.io/vue-youtube-project/',
+    description:
+      '使用 Vue + vuex 開發，串接 Youtube API 抓取台灣熱門前 200 名次的影片，用套件渲染 Youtube 播放器，並且搭配 localStorage 儲存使用者收藏的影片。介面使用 Web API IntersectionObserver 實作圖片 lazy loading 及無限滾動。',
+    projectPreviewImgPath: youtubeApiWithVue,
+    category: 'others',
+  },
+  {
+    id: 13,
+    name: '模擬小型電商網站',
+    repositoryLink: 'https://github.com/LunZaiZai0223/shop-web',
+    demoLink: 'https://lunzaizai0223.github.io/shop-web/',
+    description:
+      '以線上課程提供的單頁設計稿為基礎，使用 JS, SCSS 及 HTML 模擬框架的 component 觀念，將網頁區分成不同的元件。並且透過更改路由 #(hash) 模擬路由控制。藉此理解現代前端框架解決單使用基本 JS + HTML 開發頁面時需要手動且繁瑣的步驟操控 DOM 元素的痛點。',
+    projectPreviewImgPath: eShop,
+    category: 'others',
+  },
+  {
+    id: 14,
+    name: '臺灣旅遊景點導覽',
+    repositoryLink: 'https://github.com/LunZaiZai0223/THE_F2E_3rd_Week01',
+    demoLink: 'https://lunzaizai0223.github.io/THE_F2E_3rd_Week01/',
+    description:
+      '參加線上活動 THE F2E 3rd 參照設計稿並以 JS, SCSS 及 HTML 開發。使用 Fetch API 串接政府 Open API 資料，使用者可以透過搜尋取得各縣市的旅遊及美食資訊。',
+    projectPreviewImgPath: welcomeToTaiwan,
+    category: 'others',
+  },
+  {
+    id: 15,
+    name: 'Tic-Tac-Toe',
+    repositoryLink: 'https://github.com/LunZaiZai0223/Tic-Tac-Toe',
+    demoLink: 'https://lunzaizai0223.github.io/Tic-Tac-Toe/',
+    description:
+      '使用 JS, SCSS 及 HTML 開發的小遊戲，總共有兩種模式（雙人對戰、與電腦對戰）。程式碼使用立即函式區分模組，藉此理解 ES6 後提供的模組化功能的便利性。',
+    projectPreviewImgPath: ticTacToe,
+    category: 'others',
   },
 ];
 
