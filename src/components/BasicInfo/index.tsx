@@ -27,7 +27,7 @@ const BasicInfo = () => {
                   frontendmentor.io
                 </a>
                 <br />
-                challenges coded <br />
+                challenges and projects coded <br />
                 by{' '}
                 <a href='https://github.com/LunZaiZai0223' target='_blank' rel='noreferrer'>
                   Wei-Lun Liu
