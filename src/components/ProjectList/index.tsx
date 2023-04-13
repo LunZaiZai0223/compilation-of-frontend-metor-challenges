@@ -7,14 +7,19 @@ import s from './index.module.scss';
 import ProjectItem from '../ProjectItem';
 import FadeAndMove from '../../UI/FadeAndMove';
 
-// constants
-import PROJECT_LIST from '../../constants/project-list.constant';
+// interface
+import { Project } from '../../constants/project-list.constant';
 
-const ProjectList = () => {
+interface Props {
+  projectList: Project[];
+}
+
+const ProjectList = (props: Props) => {
+  const { projectList } = props;
   return (
     <FadeAndMove direction={'vertical'} timeout={2000} moveDistanceType={'sm'}>
       <ul className={s['project-list']}>
-        {PROJECT_LIST.map((project) => {
+        {projectList.map((project) => {
           return (
             <Fragment key={project.id}>
               <ProjectItem {...project} />
