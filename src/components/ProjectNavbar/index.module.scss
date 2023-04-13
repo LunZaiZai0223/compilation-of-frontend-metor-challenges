@@ -13,6 +13,18 @@
 .sub-navbar {
   margin-bottom: 35px;
   margin-top: 14px;
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+
+  @include md {
+    gap: unset;
+    justify-content: space-between;
+  }
+
+  li {
+    position: relative;
+  }
 
   .action {
     display: flex;
@@ -21,6 +33,25 @@
     text-decoration: none;
     font-family: inherit;
     color: colors.$black;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: colors.$black;
+      height: 1px;
+      bottom: -25%;
+    }
+
+    &:hover {
+      &::after {
+        content: '';
+      }
+    }
+
+    @include md {
+      gap: 8px;
+    }
   }
 
   svg {
