@@ -1,0 +1,24 @@
+@use '../../styles/colors.scss';
+@import '../../styles/breakpoints.scss';
+
+.support-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.support-action {
+  padding: 8px;
+  border: 2px solid colors.$black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+
+}
