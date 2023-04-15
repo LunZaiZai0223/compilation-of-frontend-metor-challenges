@@ -19,6 +19,16 @@ const ProjectItem = (props: Project) => {
   const { i18n } = useTranslation();
   const currentLang = i18n.language;
 
+  /** 處理專案名稱，有中英文會用|區隔 */
+  const renderProjectName = (projectName: string) => {
+    const splitProjectName = projectName.split('|');
+    if (splitProjectName.length > 1) {
+      return currentLang === 'zh-TW' ? splitProjectName[0] : splitProjectName[1];
+    } else {
+      return projectName;
+    }
+  };
+
   return (
     <li className={s['project-item']}>
       <Card>
@@ -26,7 +36,7 @@ const ProjectItem = (props: Project) => {
           <img src={projectPreviewImgPath} alt='project preview' />
         </div>
         <div className={s['project-content-wrapper']}>
-          <h3>{name}</h3>
+          <h3>{renderProjectName(name)}</h3>
           <p>{description[currentLang as keyof typeof description]}</p>
           <footer>
             <a href={demoLink} target='_blank' rel='noreferrer' className={s.action}>

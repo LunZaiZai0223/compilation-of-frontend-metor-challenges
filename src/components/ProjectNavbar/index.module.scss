@@ -17,9 +17,8 @@
   gap: 16px;
   list-style-type: none;
 
-  @include md {
-    gap: unset;
-    justify-content: space-between;
+  @include sm {
+    flex-direction: column;
   }
 
   li {
@@ -52,6 +51,7 @@
     @include md {
       gap: 8px;
     }
+
   }
 
   svg {
@@ -59,4 +59,10 @@
       fill: colors.$black;
     }
   }
+}
+
+.tooltip-content {
+  font-family: inherit;
+  line-height: 1.5;
+  text-align: left;
 }

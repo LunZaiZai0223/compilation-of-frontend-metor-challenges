@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
+// components
 import ScrollToTop from '../../components/ScrollToTop';
 
 // style

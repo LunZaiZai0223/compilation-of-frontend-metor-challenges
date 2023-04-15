@@ -1,9 +1,11 @@
 import { useSearchParams } from 'react-router-dom';
+
 // components
 import ProjectsPageLayout from '../layouts/ProjectsPageLayout';
 import ProjectList from '../components/ProjectList';
 import ProjectNavbar from '../components/ProjectNavbar';
 import HireMeMessage from '../components/HireMeMessage';
+import SupportBar from '../components/SupportBar';
 
 // constants
 import PROJECT_LIST from '../constants/project-list.constant';
@@ -17,6 +19,7 @@ const Projects = () => {
 
   return (
     <ProjectsPageLayout>
+      <SupportBar />
       <ProjectNavbar />
       <ProjectList projectList={currentProjectList} />
       <HireMeMessage />

@@ -1,7 +1,9 @@
 import { Link, useSearchParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // components
 import FadeAndMove from '../../UI/FadeAndMove';
+import Tooltip from '../../UI/Tooltip';
 
 // plugins
 import { AiFillHome, AiFillProject, AiOutlineProject } from 'react-icons/ai';
@@ -13,20 +15,8 @@ interface SubNavbarItem {
   subTitle: string;
   searchParams: string;
   icon: React.ReactElement;
+  tooltipContent: React.ReactElement;
 }
-
-const subNavbarList: SubNavbarItem[] = [
-  {
-    subTitle: 'Frontend Mentor',
-    searchParams: '?category=frontend-mentor',
-    icon: <AiOutlineProject />,
-  },
-  {
-    subTitle: 'Others',
-    searchParams: '?category=others',
-    icon: <AiFillProject />,
-  },
-];
 
 const getNavTitle = (query: string | null) => {
   switch (query) {
@@ -43,7 +33,31 @@ const getNavTitle = (query: string | null) => {
 
 const ProjectNavbar = () => {
   const [search] = useSearchParams();
+  const { t } = useTranslation();
   const navTitle = getNavTitle(search.get('category'));
+
+  const subNavbarList: SubNavbarItem[] = [
+    {
+      subTitle: 'Frontend Mentor',
+      searchParams: '?category=frontend-mentor',
+      icon: <AiOutlineProject />,
+      tooltipContent: (
+        <span className={s['tooltip-content']}>
+          {t('components.subNavbar.tooltipContent.frontendMentor')}
+        </span>
+      ),
+    },
+    {
+      subTitle: 'Others',
+      searchParams: '?category=others',
+      icon: <AiFillProject />,
+      tooltipContent: (
+        <span className={s['tooltip-content']}>
+          {t('components.subNavbar.tooltipContent.others')}
+        </span>
+      ),
+    },
+  ];
 
   return (
     <FadeAndMove direction={'horizontal'} timeout={2000} moveDistanceType={'sm'}>
@@ -58,12 +72,14 @@ const ProjectNavbar = () => {
             </Link>
           </li>
           {subNavbarList.map((subNavbar, index) => {
-            const { subTitle, icon, searchParams } = subNavbar;
+            const { subTitle, icon, searchParams, tooltipContent } = subNavbar;
             return (
               <li key={index}>
-                <Link relative='path' to={{ search: searchParams }} className={s.action}>
-                  {icon} {subTitle}
-                </Link>
+                <Tooltip content={tooltipContent}>
+                  <Link relative='path' to={{ search: searchParams }} className={s.action}>
+                    {icon} {subTitle}
+                  </Link>
+                </Tooltip>
               </li>
             );
           })}
