@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 // plugins
 import { GoMarkGithub } from 'react-icons/go';
 import { BsArrowRight } from 'react-icons/bs';
@@ -14,6 +16,9 @@ import s from './index.module.scss';
 
 const ProjectItem = (props: Project) => {
   const { name, repositoryLink, demoLink, description, projectPreviewImgPath } = props;
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language;
+
   return (
     <li className={s['project-item']}>
       <Card>
@@ -22,7 +27,7 @@ const ProjectItem = (props: Project) => {
         </div>
         <div className={s['project-content-wrapper']}>
           <h3>{name}</h3>
-          <p>{description}</p>
+          <p>{description[currentLang as keyof typeof description]}</p>
           <footer>
             <a href={demoLink} target='_blank' rel='noreferrer' className={s.action}>
               <HoverBtn>

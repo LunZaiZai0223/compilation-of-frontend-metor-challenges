@@ -10,7 +10,7 @@ interface Props {
   direction: 'horizontal' | 'vertical';
   timeout: number;
   children: React.ReactNode;
-  moveDistanceType: 'sm' | 'md' | 'lage';
+  moveDistanceType: 'sm' | 'md' | 'large';
 }
 
 const DEFAULT_ENTER_PREFIX_CLASS = 'fade-and-move-enter';
