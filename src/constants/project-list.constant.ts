@@ -17,7 +17,6 @@ import taiwanReservoirInfo from '../assets/project-previews/taiwan-reservoir-inf
 
 export interface Project {
   name: string;
-  i18nKey: string;
   frontendMentorSolutionLink?: string;
   repositoryLink: string;
   demoLink: string;
@@ -35,15 +34,13 @@ export interface Description {
 const PROJECT_LIST: Project[] = [
   {
     id: 1,
-    i18nKey: 'commentsSection',
     name: 'Interactive comments section',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/react-ts-rtk-interactivecommentssection-3Gd1J40P5K',
     repositoryLink: 'https://github.com/LunZaiZai0223/FM-interactive-comments-section',
     demoLink: 'https://lunzaizai0223.github.io/FM-interactive-comments-section/',
     description: {
-      'en-US':
-        'A messaging board built with React + TypeScript + Redux Toolkit. The data structure provided by the design draft is nested, so <CommentList /> is created recursively to reduce code redundancy.',
+      'en-US': 'A messaging board built with React + TypeScript + Redux Toolkit.',
       'zh-TW':
         '使用 React + TypeScript + Redux Toolkit 做的留言版，設計稿給的資料結構為巢狀，因此透過遞迴建立 <CommentList />，減少程式碼的重複性。',
     },
@@ -52,14 +49,13 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 2,
-    i18nKey: 'newsHomePage',
     name: 'News homepage',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/-react-ts-newshomepage-zJdMzKZfIO',
     repositoryLink: 'https://github.com/LunZaiZai0223/FM-news-homepage',
     demoLink: 'https://lunzaizai0223.github.io/FM-news-homepage/',
     description: {
-      'en-US': 'React + TypeScript + SCSS flexbox is used to maintain the style on mobile devices.',
+      'en-US': 'React + TypeScript + SCSS flexbox is used to implement layout.',
       'zh-TW': 'React + TypeScript + SCSS flex 結合排版，讓手機版介面也可以保持設計稿的樣式。',
     },
     projectPreviewImgPath: newsHomepage,
@@ -67,7 +63,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 3,
-    i18nKey: 'urlShortening',
     name: 'URL shortening API landing page',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/react-ts-redux-urlshorteningapi-AH85O041Uw',
@@ -84,7 +79,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 4,
-    i18nKey: 'ratingComponent',
     name: 'Interactive rating component',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/interactive-rating-component-solution-i63qg8aMvQ',
@@ -92,7 +86,7 @@ const PROJECT_LIST: Project[] = [
     demoLink: 'https://lunzaizai0223.github.io/FM-interactive-rating-component/',
     description: {
       'en-US':
-        'A rating component implemented with React + TypeScript, managing the operation steps and displaying the corresponding page through state.',
+        'A rating component implemented with React + TypeScript, managing the steps and displaying the corresponding page through state.',
       'zh-TW': 'React + TypeScript 實作的評分元件，透過 state 管理操作步驟並顯示對應的頁面。',
     },
     projectPreviewImgPath: interactiveRatingComponent,
@@ -100,7 +94,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 5,
-    i18nKey: 'cardDetailsForm',
     name: 'Interactive card details form',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/interactive-card-details-form-solution-5Zb73MTnpu',
@@ -108,7 +101,7 @@ const PROJECT_LIST: Project[] = [
     demoLink: 'https://lunzaizai0223.github.io/Interactive-card-details-form/',
     description: {
       'en-US':
-        'Developed with React + TypeScript. A custom hook useInput is created to manage the state of the input field (the entered value and whether the field has been clicked), which is used to implement form validation and display the current input state to the user through the UI.',
+        'Developed with React + TypeScript. A custom hook useInput is created to manage the state of the input field (the entered value and whether the field has been clicked), which is used to implement form validation and display the current input state.',
       'zh-TW':
         'React + TypeScript 開發。建立 custom hook useInput 管理欄位的狀態（輸入的值及欄位是否被點擊過），藉此實作表單驗證，並透過 UI 顯示告知使用者當前欄位輸入的狀態。',
     },
@@ -117,7 +110,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 6,
-    i18nKey: 'socialProofSection',
     name: 'Social proof section',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/vue-socialproofsectionmaster-BkkQZHB89',
@@ -132,7 +124,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 7,
-    i18nKey: 'signUpForm',
     name: 'Intro component with sign-up form',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/vueintro-component-with-signup-form-r1QiFb1E5',
@@ -147,7 +138,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 8,
-    i18nKey: 'timeTrackingDashboard',
     name: 'Time tracking dashboard',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/vue-timetrackingdashboardmain-nZPmAZlsgX',
@@ -162,7 +152,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 9,
-    i18nKey: 'nftCard',
     name: 'NFT preview card component',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/nft-preview-card-component-challenge-hub-9_9t5k7EZ',
@@ -177,7 +166,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 10,
-    i18nKey: 'testimonialsGrid',
     name: 'Testimonials grid section',
     frontendMentorSolutionLink:
       'https://www.frontendmentor.io/solutions/testimonials-grid-section-VoZLgjAPD',
@@ -192,7 +180,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 11,
-    i18nKey: 'reservoirInfo',
     name: '臺灣水庫資訊|Taiwan Reservoir Info',
     repositoryLink: 'https://github.com/LunZaiZai0223/taiwan-reservoir-info',
     demoLink: 'https://lunzaizai0223.github.io/taiwan-reservoir-info/',
@@ -207,7 +194,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 12,
-    i18nKey: 'youtubeApiWithVue',
     name: 'Youtube API with Vue',
     repositoryLink: 'https://github.com/LunZaiZai0223/vue-youtube-project',
     demoLink: 'https://lunzaizai0223.github.io/vue-youtube-project/',
@@ -223,7 +209,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 13,
-    i18nKey: 'minEShop',
     name: '模擬小型電商網站|Minimalist E commerce',
     repositoryLink: 'https://github.com/LunZaiZai0223/shop-web',
     demoLink: 'https://lunzaizai0223.github.io/shop-web/',
@@ -238,7 +223,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 14,
-    i18nKey: 'taiwanSpot',
     name: '臺灣旅遊景點導覽|Taiwan Spots',
     repositoryLink: 'https://github.com/LunZaiZai0223/THE_F2E_3rd_Week01',
     demoLink: 'https://lunzaizai0223.github.io/THE_F2E_3rd_Week01/',
@@ -253,7 +237,6 @@ const PROJECT_LIST: Project[] = [
   },
   {
     id: 15,
-    i18nKey: 'ticTacToe',
     name: 'Tic-Tac-Toe',
     repositoryLink: 'https://github.com/LunZaiZai0223/Tic-Tac-Toe',
     demoLink: 'https://lunzaizai0223.github.io/Tic-Tac-Toe/',
