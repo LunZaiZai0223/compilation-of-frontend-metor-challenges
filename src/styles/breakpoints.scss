@@ -1,7 +1,14 @@
 $mobile: 886px;
+$sm-mobile: 568px;
 
 @mixin md {
   @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: $sm-mobile) {
     @content;
   }
 }
