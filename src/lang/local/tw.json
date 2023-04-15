@@ -5,25 +5,6 @@
         "frontendMentor": "Frontend Mentor 是提供設計稿及樣式指南的網站，讓開發者藉此練習實際的前端開發流程與技能。",
         "others": "個人的作品集，不限於使用 React 也有使用 Angular, Vue 2.x 與基本 HTML, CSS 及 JavaScript 開發的作品。"
       }
-    },
-    "projectList": {
-      "projectDescription": {
-        "commentsSection": "使用 React + TypeScript + Redux Toolkit 做的留言版，設計稿給的資料結構為巢狀，因此透過遞迴建立 <CommentList />，減少程式碼的重複性。",
-        "newsHomePage": "React + TypeScript + SCSS flex 結合排版，讓手機版介面也可以保持設計稿的樣式。",
-        "urlShortening": "React + TypeScript + Redux 開發。不使用 Redux Toolkit 管理 app-wide state，藉此練習 Redux 的資料流，也更能理解 Redux Toolkit 解決 Redux 冗長的 boilerplate code 的痛點。",
-        "ratingComponent": "React + TypeScript 實作的評分元件，透過 state 管理操作步驟並顯示對應的頁面。",
-        "cardDetailsForm": "React + TypeScript 開發。建立 custom hook useInput 管理欄位的狀態（輸入的值及欄位是否被點擊過），藉此實作表單驗證，並透過 UI 顯示告知使用者當前欄位輸入的狀態。",
-        "socialProofSection": "Vue2 開發，並搭配語義化 HTML 標籤實作設計稿頁面。",
-        "signUpForm": "Vue2 開發，參照設計稿切版並實作建議表單驗證。",
-        "timeTrackingDashboard": "Vue2 + CSS grid 實作設計稿頁面，透過 data 控制顯示不同時間選項的資料。",
-        "nftCard": "語義化 HTML + SCSS 切出設計稿的版面。",
-        "testimonialsGrid": "語義化 HTML + SCSS grid 切出設計稿版面。",
-        "reservoirInfo": "使用 Angular 開發，串接水庫資訊 API，並使用 ng-apexcharts 實作圖表、ngx-translate 實作 i18n 語系切換（中/英）以及 Rx.js 呼叫不同 API 並整理成頁面所需的資訊。排版則是使用 SCSS + flexbox，並依照目前樣式模式渲染明亮或黑暗模式的介面。",
-        "youtubeApiWithVue": "使用 Vue + vuex 開發，串接 Youtube API 抓取台灣熱門前 200 名次的影片，用套件渲染 Youtube 播放器，並且搭配 localStorage 儲存使用者收藏的影片。介面使用 Web API IntersectionObserver 實作圖片 lazy loading 及無限滾動。",
-        "minEShop": "以線上課程提供的單頁設計稿為基礎，使用 JS, SCSS 及 HTML 模擬框架的 component 觀念，將網頁區分成不同的元件。並且透過更改路由 #(hash) 模擬路由控制。藉此理解現代前端框架解決單使用基本 JS + HTML 開發頁面時需要手動且繁瑣的步驟操控 DOM 元素的痛點。",
-        "taiwanSpot": "參加線上活動 THE F2E 3rd 參照設計稿並以 JS, SCSS 及 HTML 開發。使用 Fetch API 串接政府 Open API 資料，使用者可以透過搜尋取得各縣市的旅遊及美食資訊。",
-        "ticTacToe": "使用 JS, SCSS 及 HTML 開發的小遊戲，總共有兩種模式（雙人對戰、與電腦對戰）。程式碼使用立即函式區分模組，藉此理解 ES6 後提供的模組化功能的便利性。"
-      }
     }
   },
   "test": "你好"

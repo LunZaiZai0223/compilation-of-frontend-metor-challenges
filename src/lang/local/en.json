@@ -2,27 +2,8 @@
   "components": {
     "subNavbar": {
       "tooltipContent": {
-        "frontendMentor": "Frontend Mentor provides designs so that you can practice your front-end skills using a real-life workflow. Our challenges include designs (both mobile and desktop), assets, and a style guide to get you started.",
+        "frontendMentor": "Frontend Mentor is a website that provides designs so that you can practice your front-end skills using a real-life workflow. Our challenges include designs (both mobile and desktop), assets, and a style guide to get you started.",
         "others": "My projects includes works developed using React, Angular, Vue 2.x, as well as basic HTML, CSS, and JavaScript."
-      }
-    },
-    "projectList": {
-      "projectDescription": {
-        "commentsSection": "A messaging board built with React + TypeScript + Redux Toolkit. The data structure provided by the design draft is nested, so <CommentList /> is created recursively to reduce code redundancy.",
-        "newsHomePage": "React + TypeScript + SCSS flexbox layout is used to maintain the style of the design draft on mobile devices.",
-        "urlShortening": "Developed with React + TypeScript + Redux. App-wide state is not managed using Redux Toolkit to practice the data flow of Redux and better understand how Redux Toolkit solves the problem of verbose boilerplate code in Redux.",
-        "ratingComponent": "A rating component implemented with React + TypeScript, managing the operation steps and displaying the corresponding page through state management.",
-        "cardDetailsForm": "Developed with React + TypeScript. A custom hook useInput is created to manage the state of the input field (the entered value and whether the field has been clicked), which is used to implement form validation and display the current input state to the user through the UI.",
-        "socialProofSection": "Developed with Vue2 and implemented the design draft page using semantic HTML tags.",
-        "signUpForm": "Developed with Vue2, referring to the design draft layout, and implementing suggested form validation.",
-        "timeTrackingDashboard": "Implemented the design draft page using Vue2 + CSS grid and controlled the display of different time options through data.",
-        "nftCard": "The design draft layout is cut out using semantic HTML + SCSS.",
-        "testimonialsGrid": "The design draft layout is cut out using semantic HTML + SCSS grid",
-        "reservoirInfo": "Developed with Angular, connected to the reservoir information API, and used ng-apexcharts to implement charts, ngx-translate to implement i18n language switching (Chinese/English), and Rx.js to call different APIs and organize the information needed for the page. The layout uses SCSS + flexbox and renders a bright or dark mode interface depending on the current style mode.",
-        "youtubeApiWithVue": "Developed with Vue + Vuex, connected to the Youtube API to retrieve the top 200 videos in Taiwan, used packages to render the Youtube player, and stored the user's favorite videos using localStorage. The interface uses Web API IntersectionObserver to implement lazy loading of images and infinite scrolling.",
-        "minEShop": "Based on a single-page design draft provided by an online course, simulated the concept of framework components using JS, SCSS, and HTML, and divided the webpage into different components. The routing control is simulated by changing the route #(hash). This helps to understand the pain points of manually manipulating DOM elements when developing a page using basic JS + HTML instead of modern frontend frameworks.",
-        "taiwanSpot": "Developed based on the design draft of THE F2E 3rd online event using JS, SCSS, and HTML. Connected to the government's Open API data using Fetch API, users can search and obtain travel and food information for various counties and cities.",
-        "ticTacToe": "A small game developed with JS, SCSS, and HTML, with two modes (two-player mode and computer mode). The code uses immediately invoked function expressions to separate modules, which helps to understand the pain points of manipulating DOM elements manually after ES6."
       }
     }
   },
