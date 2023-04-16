@@ -32,7 +32,7 @@
 
 ## 感謝
 
-作品集頁面及靈感參照：
+作品集頁面及靈感參考：
 
 1. [主頁設計](https://dribbble.com/shots/17289331-Silvia-Sguotti-Menu-concept)
 2. [frontendmentorProjects](https://github.com/visualdenniss/frontendmentorProjects)
