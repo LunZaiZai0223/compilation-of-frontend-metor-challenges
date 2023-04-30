@@ -9,6 +9,7 @@ import socialProofSection from '../assets/project-previews/social-proof-section.
 import testimonialsGridSection from '../assets/project-previews/testimonials-grid-section.jpg';
 import timeTrackingDashboard from '../assets/project-previews/time-tracking-dashboard.jpg';
 import urlShorteningApiLandingPage from '../assets/project-previews/url-shortening-api-landing-page.jpg';
+import ecommerceProductPage from '../assets/project-previews/ecommerce-product-page.jpg'
 import eShop from '../assets/project-previews/e-shop.png';
 import welcomeToTaiwan from '../assets/project-previews/welcome-to-taiwan.png';
 import ticTacToe from '../assets/project-previews/tic-tac-toe.png';
@@ -32,6 +33,21 @@ export interface Description {
 }
 
 const PROJECT_LIST: Project[] = [
+  {
+    id: 16,
+    name: 'Ecommerce product page',
+    frontendMentorSolutionLink:
+      'https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub',
+    repositoryLink: 'https://github.com/LunZaiZai0223/FM-ecommerce-product-page',
+    demoLink: 'https://lunzaizai0223.github.io/FM-ecommerce-product-page/',
+    description: {
+      'en-US': 'Lightbox Desktop Image Gallery & Slider Images Gallery for mobile, Functions to add items to cart.',
+      'zh-TW':
+        '使用 React + TypeScript + Redux Toolkit + styled-component 開發的單頁商品詳情頁面，並模擬實際購物車流程。',
+    },
+    projectPreviewImgPath: ecommerceProductPage,
+    category: 'frontend-mentor',
+  },
   {
     id: 1,
     name: 'Interactive comments section',
