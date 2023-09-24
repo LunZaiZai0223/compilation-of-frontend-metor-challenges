@@ -7,6 +7,7 @@ import { BsArrowRight } from 'react-icons/bs';
 // components
 import HoverBtn from '../../UI/HoverBtn';
 import Card from '../../UI/Card';
+import ProjectLabel from './ProjectLabel';
 
 // interfaces
 import { Project } from '../../constants/project-list.constant';
@@ -34,6 +35,7 @@ const ProjectItem = (props: Project) => {
       <Card>
         <div className={s['preview-img-wrapper']}>
           <img src={projectPreviewImgPath} alt='project preview' />
+          <ProjectLabel labels={props.label ?? []} />
         </div>
         <div className={s['project-content-wrapper']}>
           <h3>{renderProjectName(name)}</h3>

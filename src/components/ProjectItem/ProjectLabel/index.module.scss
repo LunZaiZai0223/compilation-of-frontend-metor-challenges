@@ -1,0 +1,17 @@
+@use '../../../styles/colors.scss';
+@import '../../../styles/breakpoints.scss';
+
+.labels {
+  position: absolute;
+  top: -10px;
+  left: 2%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}
