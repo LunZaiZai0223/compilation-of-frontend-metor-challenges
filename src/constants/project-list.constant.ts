@@ -1,4 +1,4 @@
-// assetes
+// assets
 import interactiveCommentsSection from '../assets/project-previews/interactive-comments-section.jpg';
 import interactiveCardDetailsForm from '../assets/project-previews/interactive-card-details-form.jpg';
 import interactiveRatingComponent from '../assets/project-previews/interactive-rating-component.jpg';
@@ -15,6 +15,9 @@ import welcomeToTaiwan from '../assets/project-previews/welcome-to-taiwan.png';
 import ticTacToe from '../assets/project-previews/tic-tac-toe.png';
 import youtubeApiWithVue from '../assets/project-previews/youtube-api-with-vue.png';
 import taiwanReservoirInfo from '../assets/project-previews/taiwan-reservoir-info.png';
+import entertainmentWebApp from '../assets/project-previews/entertainment-web-app.png';
+
+export type Label = 'react' | 'vue' | 'angular' | 'javascript'
 
 export interface Project {
   name: string;
@@ -25,6 +28,7 @@ export interface Project {
   description: Description;
   projectPreviewImgPath?: string;
   category: string;
+  label?: Label[]
 }
 
 export interface Description {
@@ -47,6 +51,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: ecommerceProductPage,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 1,
@@ -62,6 +67,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: interactiveCommentsSection,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 2,
@@ -76,6 +82,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: newsHomepage,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 3,
@@ -92,6 +99,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: urlShorteningApiLandingPage,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 4,
@@ -107,6 +115,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: interactiveRatingComponent,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 5,
@@ -123,6 +132,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: interactiveCardDetailsForm,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 6,
@@ -137,6 +147,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: socialProofSection,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 7,
@@ -151,6 +162,7 @@ const PROJECT_LIST: Project[] = [
     demoLink: 'https://lunzaizai0223.github.io/intro-component-with-signup-form-master/',
     projectPreviewImgPath: introComponentWithSignUpForm,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 8,
@@ -165,6 +177,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: timeTrackingDashboard,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 9,
@@ -179,6 +192,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: nftPreviewCardComponent,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 10,
@@ -193,6 +207,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: testimonialsGridSection,
     category: 'frontend-mentor',
+    label: ['react']
   },
   {
     id: 11,
@@ -207,6 +222,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: taiwanReservoirInfo,
     category: 'others',
+    label: ['angular']
   },
   {
     id: 12,
@@ -222,6 +238,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: youtubeApiWithVue,
     category: 'others',
+    label: ['vue']
   },
   {
     id: 13,
@@ -236,6 +253,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: eShop,
     category: 'others',
+    label: ['javascript']
   },
   {
     id: 14,
@@ -250,6 +268,7 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: welcomeToTaiwan,
     category: 'others',
+    label: ['javascript']
   },
   {
     id: 15,
@@ -264,6 +283,22 @@ const PROJECT_LIST: Project[] = [
     },
     projectPreviewImgPath: ticTacToe,
     category: 'others',
+    label: ['javascript']
+  },
+  {
+    id: 17,
+    name: 'Entertainment-Web',
+    repositoryLink: 'https://github.com/LunZaiZai0223/FM-entertainment-web-app',
+    demoLink: 'https://fm-entertainment-web-app-sand.vercel.app/',
+    description: {
+      'en-US':
+        'A entertainment web developed with React, TypeScript, React Query and Styled-Component. Users can get movies or TV series information by TMDB API.',
+      'zh-TW':
+        '使用 React, TypeScrip, React Query 及 Styled-Component 開發，並且串接 TMDB API，取得電影及影劇的相關資訊。',
+    },
+    projectPreviewImgPath: entertainmentWebApp,
+    category: 'others',
+    label: ['react']
   },
 ];
 
